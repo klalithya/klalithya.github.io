@@ -3,84 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lalithya Kalluri's Portfolio</title>
+    <title>Lalithya Kalluri | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Lalithya Kalluri</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>Lalithya Kalluri</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! Data Science Enthusiast | Software Development | Data Visualization | Data Analysis | Data Engineering | Math Tutor | Graduate Student at UMBC.</p>
-        <p>A master's degree candidate in data science with experience in data analysis, software development, and machine learning. I have worked as a fintech associate developer, creating AI-powered solutions and streamlining processes. Excellent academic credentials with a concentration in data science and real-world teaching, project management, and research experience.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>About Me</h2>
+            <p>Data Science Enthusiast | Software Developer | AI & ML Specialist | Graduate Student at UMBC</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Real-time Emotion Detection using Deep Learning</h3>
-            <p>Created a CNN-based real-time emotion recognition system on the FER-2013 dataset, deployed it on a Jetson Nano for facial expression analysis in the classroom to improve student engagement and instructional efficacy, and planned its integration with a classroom management system.</p>
-            <a href="https://github.com/klalithya/Real-time-Emotion-detection" target="_blank">View Project</a>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="emotion-detection.jpg" alt="Project Image">
+                    <h3>Real-time Emotion Detection</h3>
+                    <p>CNN-based real-time emotion recognition deployed on Jetson Nano.</p>
+                    <a href="https://github.com/klalithya/Real-time-Emotion-detection" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="data-analysis.jpg" alt="Project Image">
+                    <h3>Comprehensive Data Analysis</h3>
+                    <p>Data analysis pipeline with ML models for optimization.</p>
+                    <a href="https://github.com/klalithya/ComprehensiveDataAnalysisandModeling" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="911-call-analysis.jpg" alt="Project Image">
+                    <h3>911 Call Service Analysis</h3>
+                    <p>Analyzing emergency call data for insights and efficiency.</p>
+                    <a href="https://github.com/klalithya/911call-service-analysis" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="customer-churn.jpg" alt="Project Image">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>Evaluating machine learning models for customer retention strategies.</p>
+                    <a href="https://github.com/klalithya/Customer-Churn-Prediction" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="renewable-energy.jpg" alt="Project Image">
+                    <h3>Intelligent Grid Optimization</h3>
+                    <p>Machine learning-driven optimization for renewable energy stability.</p>
+                    <a href="https://github.com/klalithya/Final-Capestone-project" target="_blank">View Project</a>
+                </div>
+            </div>
         </div>
-
-        <div class="project">
-            <h3>Comprehensive Data Analysis and Modeling Project</h3>
-            <p>Carried out thorough data analysis, preprocessing, and visualization; created a pipeline for data transformation; and used cross-validation and hyperparameter tuning to optimize machine learning models such as Random Forest, Decision Tree, and Logistic Regression.</p>
-            <a href="https://github.com/klalithya/ComprehensiveDataAnalysisandModeling" target="_blank">View Project</a>
-        </div>
-
-        <div class="project">
-            <h3>911 Call Service Analysis and Detection</h3>
-            <p>Detailed data analysis and preprocessing using Spark RDD and SQL produced insights into feature relevance and decision tree classification. Increased effectiveness of emergency response by using PySpark to target high-priority calls for quick insights based on patterns.</p>
-            <a href="https://github.com/klalithya/911call-service-analysis" target="_blank">View Project</a>
-        </div>
-
-        <div class="project">
-            <h3>Customer Churn Prediction</h3>
-            <p>Examined the efficacy of five machine learning algorithms—Random Forest, SVM, KNN, Naive Bayes, and Logistic Regression—to forecast customer attrition in a telecom dataset and gave telecom firms useful advice on churn tactics based on risk assessments.</p>
-            <a href="https://github.com/klalithya/Customer-Churn-Prediction" target="_blank">View Project</a>
-        </div>
-
-        <div class="project">
-            <h3>Intelligent Grid Machine Learning Driven Optimization For Renewable Energy Stability</h3>
-            <p>The Intelligent Grid: Machine Learning-Driven Renewable Energy Optimization project focuses on leveraging advanced machine learning techniques to address challenges in integrating renewable energy sources into the electricity grid.</p>
-            <a href="https://github.com/klalithya/Final-Capestone-project" target="_blank">View Project</a>
-        </div>
-
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>React</li>
-            <li>Machine Learning</li>
-            <li>Data Analysis</li>
-        </ul>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fas fa-database"></i> SQL</li>
+                <li><i class="fas fa-chart-line"></i> Data Visualization</li>
+                <li><i class="fas fa-brain"></i> Machine Learning</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:lalithyakalluri99@gmail.com">lalithyakalluri99@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/klalithya" target="_blank">github.com/klalithya</a></p>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:lalithyakalluri99@gmail.com">lalithyakalluri99@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/klalithya" target="_blank">github.com/klalithya</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/klalithya" target="_blank">www.linkedin.com/in/lalithya-kalluri-9246561b4</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Lalithya Kalluri</p>
+        <div class="container">
+            <p>&copy; 2025 Lalithya Kalluri</p>
+        </div>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
