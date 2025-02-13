@@ -10,10 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 projectDiv.classList.add("project");
 
                 // Generate image file path based on repository name
-                let imageUrl = `images/${repo.name}.jpg`;
+                let imageUrl = `https://klalithya.github.io/images/${repo.name}.jpg`;
 
                 projectDiv.innerHTML = `
-                    <img src="${imageUrl}" alt="${repo.name}" onerror="this.onerror=null; this.src='images/default.jpg';">
+                    <img src="${imageUrl}" alt="${repo.name}" 
+                        onerror="this.onerror=null; this.src='https://klalithya.github.io/images/default.jpg';">
                     <h3>${repo.name}</h3>
                     <p>${repo.description ? repo.description : "No description available."}</p>
                     <a href="${repo.html_url}" target="_blank">View on GitHub</a>
