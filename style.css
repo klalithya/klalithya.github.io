@@ -43,13 +43,13 @@
 
 /* Styling for Project Images */
 .project img {
-    width: 100%; /* Makes images responsive */
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px; /* Slightly round corners of images */
+    width: 100%;  /* Makes the image fill the container width */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the available space while maintaining its aspect ratio */
+    border-radius: 8px;  /* Rounded corners for the image */
+    max-width: 300px;  /* Adjust max-width to make images smaller */
+    margin: 0 auto;  /* Center the image within the project box */
 }
-
-/* Project Heading */
 .project h3 {
     margin-top: 10px;
     color: #333;
@@ -76,5 +76,8 @@
 }
 
 .projects-grid {
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures the grid adapts to screen size */
+    gap: 20px; /* Spacing between projects */
+    padding: 10px;
 }
