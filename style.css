@@ -22,9 +22,19 @@
 .project:hover {
     transform: scale(0.05);
 }
+.project-link {
+    text-decoration: none; /* Removes underlines */
+    display: block;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+}
 
 .project img {
-    width: 100px;
+    width: 150px;
     height: auto;
     object-fit: cover;
     border-radius: 50%;
