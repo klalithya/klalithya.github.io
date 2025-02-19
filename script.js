@@ -15,12 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Ensure the project is clickable by wrapping it in an <a> tag
                 projectDiv.innerHTML = `
-                    <a href="${repo.html_url}" target="_blank" class="project-link">
-                        <img src="${imageUrl}" alt="${repo.name}" 
-                             onerror="this.onerror=null; this.src='https://klalithya.github.io/images/default.jpg';">
-                        <h3>${repo.name}</h3>
-                        <p>${repo.description ? repo.description : "No description available."}</p>
-                    </a>
+                    <div class="project-link">
+                        <a href="${repo.html_url}" target="_blank">
+                            <img src="${imageUrl}" alt="${repo.name}" 
+                                 onerror="this.onerror=null; this.src='https://klalithya.github.io/images/default.jpg';">
+                            <h3>${repo.name}</h3>
+                            <p>${repo.description ? repo.description : "No description available."}</p>
+                        </a>
+                    </div>
                 `;
 
                 projectSection.appendChild(projectDiv);
