@@ -1,6 +1,6 @@
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1500px, 1fr));
     gap: 20px;
 }
 
@@ -14,11 +14,11 @@
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(0.05);
 }
 
 .project img {
-    width: 150px;
+    width: 100px;
     height: auto;
     object-fit: cover;
     border-radius: 50%;
