@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let repoNameFormatted = repo.name.toLowerCase().replace(/\s+/g, "-");
                 let imageUrl = `https://klalithya.github.io/images/${repoNameFormatted}.jpg`;
 
+                // Ensure the project is clickable by wrapping it in an <a> tag
                 projectDiv.innerHTML = `
                     <a href="${repo.html_url}" target="_blank" class="project-link">
                         <img src="${imageUrl}" alt="${repo.name}" 
