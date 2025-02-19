@@ -1,3 +1,9 @@
+.profile-pic {
+    width: 150px;  /* Adjust the size as needed */
+    height: 150px; /* Keep it proportional */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures it looks nice */
+}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1500px, 1fr));
