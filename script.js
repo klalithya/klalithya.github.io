@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 let projectDiv = document.createElement("div");
                 projectDiv.classList.add("project");
 
-                let imageUrl = `https://klalithya.github.io/images/${repo.name}.jpg`;
+                // Convert repository name to lowercase and replace spaces with hyphens
+                let repoNameFormatted = repo.name.toLowerCase().replace(/\s+/g, "-");
+                let imageUrl = `https://klalithya.github.io/images/${repoNameFormatted}.jpg`;
 
                 projectDiv.innerHTML = `
                     <a href="${repo.html_url}" target="_blank" class="project-link">
