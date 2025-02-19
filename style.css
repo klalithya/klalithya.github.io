@@ -1,15 +1,19 @@
+/* Profile Picture Styling */
 .profile-pic {
     width: 150px;  /* Adjust the size as needed */
     height: 150px; /* Keep it proportional */
     border-radius: 50%; /* Makes it circular */
     object-fit: cover; /* Ensures it looks nice */
 }
+
+/* Projects Grid Styling */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures a responsive grid */
     gap: 20px;
 }
 
+/* Individual Project Styling */
 .project {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -19,9 +23,12 @@
     transition: transform 0.3s ease-in-out;
 }
 
+/* Hover Effect on Project */
 .project:hover {
-    transform: scale(0.05);
+    transform: scale(1.05); /* Fixed the scale effect for a smoother hover */
 }
+
+/* Project Link Styling */
 .project-link {
     text-decoration: none; /* Removes underlines */
     display: block;
@@ -29,30 +36,45 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* Hover Effect on Project Links */
 .project-link:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
 }
 
+/* Styling for Project Images */
 .project img {
-    width: 150px;
+    width: 100%; /* Makes images responsive */
     height: auto;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10px; /* Slightly round corners of images */
 }
 
+/* Project Heading */
 .project h3 {
     margin-top: 10px;
     color: #333;
 }
 
+/* Project Description Styling */
 .project p {
     color: #666;
 }
 
+/* Project Link Text Styling */
 .project a {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #007BFF;
+    color: #007BFF; /* Blue color for links */
     font-weight: bold;
+}
+
+/* Additional Styling for the Projects Grid Section */
+#projects {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.projects-grid {
+    margin-top: 10px;
 }
