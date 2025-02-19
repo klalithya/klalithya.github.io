@@ -9,15 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 let projectDiv = document.createElement("div");
                 projectDiv.classList.add("project");
 
-                // Generate image file path based on repository name
                 let imageUrl = `https://klalithya.github.io/images/${repo.name}.jpg`;
 
                 projectDiv.innerHTML = `
-                    <img src="${imageUrl}" alt="${repo.name}" 
-                        onerror="this.onerror=null; this.src='https://klalithya.github.io/images/default.jpg';">
-                    <h3>${repo.name}</h3>
-                    <p>${repo.description ? repo.description : "No description available."}</p>
-                    <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+                    <a href="${repo.html_url}" target="_blank" class="project-link">
+                        <img src="${imageUrl}" alt="${repo.name}" 
+                             onerror="this.onerror=null; this.src='https://klalithya.github.io/images/default.jpg';">
+                        <h3>${repo.name}</h3>
+                        <p>${repo.description ? repo.description : "No description available."}</p>
+                    </a>
                 `;
 
                 projectSection.appendChild(projectDiv);
