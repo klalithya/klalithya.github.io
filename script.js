@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let projectDiv = document.createElement("div");
                 projectDiv.classList.add("project");
 
-                // Convert repository name to lowercase and replace spaces with hyphens
+                // Convert repo name to lowercase and replace spaces with hyphens
                 let repoNameFormatted = repo.name.toLowerCase().replace(/\s+/g, "-");
                 let imageUrl = `https://klalithya.github.io/images/${repoNameFormatted}.jpg`;
 
